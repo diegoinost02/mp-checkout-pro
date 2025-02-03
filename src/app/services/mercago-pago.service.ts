@@ -13,6 +13,7 @@ export class MercagoPagoService {
   private readonly mpApi = 'https://api.mercadopago.com/checkout/preferences';
   private readonly MERCADO_PAGO_TOKEN = environment.MERCADO_PAGO_TOKEN;
 
+  // el preference id debe ser creado en el backend, este método es solo un ejemplo
   createPreferenceMP(preference: PreferenceDto) {
     return this.http.post<PreferenceResponse>(this.mpApi, preference, {
       headers: {

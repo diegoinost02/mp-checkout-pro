@@ -1,0 +1,12 @@
+<div class="container">
+     <button (click)="createPreferenceId()" class="submit-btn">
+        @if (requestStatus === 'loading') {
+            Cargando...
+        } @else {
+            Comprar
+        }
+    </button>
+    <div class="content">
+        <div id="wallet_container"></div>
+    </div>
+</div>
